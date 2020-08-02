@@ -83,6 +83,41 @@ body {
   font-size: 2.5rem;
 }
 
+.long-quote {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgba(80, 73, 118, 0.5);
+  border-bottom: 16px solid rgba(80, 73, 118, 0.5);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Query for responsive design */
 
 @media screen and (max-width: 900px) {

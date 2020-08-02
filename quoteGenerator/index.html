@@ -12,21 +12,24 @@
   </head>
 
   <body>
-    <div class="quote-container">
+    <div class="quote-container" id="quote-container">
       <div class="quote-text">
         <i class="fas fa-quote-left"></i>
-        <span class="quote">
-          Timing, perseverance, and ten years of trying will eventually make you
-          look like an overnight success.
-        </span>
-        <h3 class="quote-author">Biz Stone</h3>
+        <span id="quote"></span>
+        <h3 class="quote-author" id="quote-author"></h3>
       </div>
       <div class="buttons-container">
-        <button class="btn twitter-btn" title="twite me">
+        <button class="btn twitter-btn" title="twite me" id="tweet">
           <i class="fab fa-twitter"></i>
         </button>
-        <button class="btn new-quote-btn">New Quote</button>
+        <button class="btn new-quote-btn" id="new-quote">New Quote</button>
       </div>
     </div>
+    <!-- <div class="loader" id="loader"></div> -->
+
+    <!-- Axios js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!-- JS script -->
+    <script src="app.js"></script>
   </body>
 </html>
